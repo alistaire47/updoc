@@ -14,4 +14,4 @@ def _build_pkg_url(host: str, category: str, pkg_name: str) -> str:
     :param pkg_name: package name 
     """
     # return f'{host}static/{category}/{pkg_name}/index.html'
-    return f"{_format_host(host)}static/{category.title()}/{pkg_name}/index.html'
+    return f"{_format_host(host)}static/{category.title()}/{pkg_name}/index.html"

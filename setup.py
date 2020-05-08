@@ -42,5 +42,5 @@ setup(
             'requests'
         ]
     },
-    entry_points={"console_scripts": ["updoc-open = cli.open:_cli"]}
+    entry_points={"console_scripts": ["updoc = cli.cli:cli"]}
 )
