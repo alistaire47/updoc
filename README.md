@@ -118,28 +118,30 @@ Open documentation of a package (e.g. `R` package `httr`)
 updoc open --category r --package httr 
 ```
 
-List all catogories available 
+Search all categories with regex
 
 ```bash
-updoc list 
+updoc search ht.* 
 ```
 
-List all available documentations within a category (e.g. `Python` category)
+Search all available documentations within a category (e.g. `Python` category)
 
 ```bash
-updoc list --category py 
+updoc search -c python
 ```
 
-Prints the full URL of the documentation of a package (you may want to use `updoc open` instead to open directly in browser)
+Search a category of packages for matching names and print the full URL of the 
+documentation of matching packages (you may want to use `updoc open` instead 
+to open directly in browser)
 
 ```bash
-updoc list --category r --package httr 
+updoc search -c r httr 
 ```
 
 Prints the version of the documentation of a package (e.g. `Python` package `requests`)
 
 ```bash
-updoc list --category py --package requests --version   
+updoc version --category python requests
 ```
 
 ---
